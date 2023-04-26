@@ -22,4 +22,4 @@ jobs:
         env:
           VAR1: Isto é
           VAR2: GitHUB Actions
-        run: echo &VAR1 &VAR2
+        run: echo $VAR1 $VAR2
