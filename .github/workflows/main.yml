@@ -1,0 +1,25 @@
+name: Aula de GCS (PUC Campinas)
+
+on: push
+
+defaults:
+  run:
+    shell: bash
+      # working-directory:
+
+jobs:
+  primeiro:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Monstrar rodando
+        run: echo teste
+    
+  segundo:
+    runs-on: ubuntu-latest
+    name: Segundo
+      steps:
+        - name: Criando Variaveis de ambiente
+        env:
+          VAR1: Isto é
+          VAR2: GitHUB Actions
+        run: echo &VAR1 &VAR2
